@@ -49,12 +49,6 @@ public class game {
         dealerPanel.setBounds(0, 40, 1750, 150);
         playerPanel.setBounds(0, 400, 1750, 150);
         buttonPanel.setBounds(0, 760, 1750, 100);
-
-        dealerPanel.add(buildCard("AS.png"));
-        dealerPanel.add(buildCard("10H.png"));
-
-        playerPanel.add(buildCard("KC.png"));
-        playerPanel.add(buildCard("7D.png"));
     }
 
     public void buildButtons() {
