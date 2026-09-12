@@ -67,6 +67,12 @@ public class game {
         standButton.setPreferredSize(new Dimension(150, 60));
         quitButton.setPreferredSize(new Dimension(150, 60));
 
+
+        hitButton.setFont(new Font("Arial", Font.PLAIN, 24));
+        standButton.setFont(new Font("Arial", Font.PLAIN, 24));
+        quitButton.setFont(new Font("Arial", Font.PLAIN, 24));
+        dealButton.setFont(new Font("Arial", Font.PLAIN, 24));
+        
         frame.add(dealerPanel);
         frame.add(playerPanel);
         frame.add(buttonPanel);
