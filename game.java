@@ -9,6 +9,7 @@ public class game {
     JPanel playerPanel;
     JPanel buttonPanel;
 
+    JButton dealButton;
     JButton hitButton;
     JButton standButton;
     JButton quitButton;
@@ -56,14 +57,17 @@ public class game {
     }
 
     public void buildButtons() {
+        dealButton = new JButton("Deal");
         hitButton = new JButton("Hit");
         standButton = new JButton("Stand");
         quitButton = new JButton("Quit");
 
+        buttonPanel.add(dealButton);
         buttonPanel.add(hitButton);
         buttonPanel.add(standButton);
         buttonPanel.add(quitButton);
 
+        dealButton.setPreferredSize(new Dimension(150, 60));
         hitButton.setPreferredSize(new Dimension(150, 60));
         standButton.setPreferredSize(new Dimension(150, 60));
         quitButton.setPreferredSize(new Dimension(150, 60));
@@ -74,6 +78,7 @@ public class game {
 
         buttonPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 75, 20));
 
+        buttonPanel.add(dealButton);
         buttonPanel.add(hitButton);
         buttonPanel.add(standButton);
         buttonPanel.add(quitButton);
