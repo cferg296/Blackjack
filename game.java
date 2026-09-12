@@ -18,7 +18,8 @@ public class game {
         buildFrame();
         buildPanels();
         buildButtons();
-
+        buttonEvents();
+        
         frame.setVisible(true);
     }
 
@@ -82,6 +83,26 @@ public class game {
         buttonPanel.add(hitButton);
         buttonPanel.add(standButton);
         buttonPanel.add(quitButton);
+
+        hitButton.setEnabled(false);
+        standButton.setEnabled(false);
+    }
+
+    public void buttonEvents(){
+        dealButton.addActionListener(e -> {
+                dealButton.setEnabled(false);
+                hitButton.setEnabled(true);
+                standButton.setEnabled(true);
+            });
+        hitButton.addActionListener(e -> {
+                
+            });
+        standButton.addActionListener(e -> {
+                
+            });
+        quitButton.addActionListener(e -> {
+              System.exit(0);  
+            });
     }
     public JLabel buildCard(String fileName) {
         ImageIcon icon = new ImageIcon("Images/" + fileName);
